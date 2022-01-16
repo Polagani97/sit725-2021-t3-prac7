@@ -1,0 +1,23 @@
+body {
+	font-family: sans-serif "helvetica-neue";
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.center {
+	text-align: center;
+}
+
+footer {
+	margin-top: 3%;
+}
+

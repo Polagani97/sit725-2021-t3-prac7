@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+
+  <title> SIT725 Socket io</title>
+  <meta name="description" content="Priyanka Portfolio">
+  <meta name="author" content="Priyanka Polagani">
+
+  <!-- Bootstrap core CSS -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">	
+  <link href="main.css" rel="stylesheet">	       
+  <link href="profile.css" rel="stylesheet">	
+  <link href="skills.css" rel="stylesheet">	
+  <link href="styles.css" rel="stylesheet">	
+  <link href="timeline.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="simple-line-icons.css">
+
+  <!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-mobile">
+        <ul class="left hide-on-med-and-down">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#introduction-section">Introduction</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#experience-section">Experience</a></li>
+          <li><a href="resume.pdf">Resume</a></li>
+          <li><a href="https://www.instagram.com/through_my_____eyes/" target="_blank">Hobbies</a></li>
+          <li><a href="mailto:priyankapolagani12@gmail.com?Subject=Hello!" target="_top">Contact me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="bg">
+    <!-- Intro --> 
+		<section id="introduction-section" class="introduction-section">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col s12">
+            <img class="profile-image rounded-circle" src="myself.jpg.jpg" alt="">
+            <h1 class="name">Priyanka Polagani <span id="socketOut"></span></h1>
+      
+            <div class="title italic"><h3>Pursuing masters in Information Technology</h3></div>
+            <div class="profile">
+              <a href="https://www.linkedin.com/in/priyanka-polagani-022b32169/" target="_blank">
+                <i class="fa fa-linkedin social_icon"></i>
+              </a>
+              <a href="https://github.com/Polagani97" target="_blank">
+                <i class="fa fa-github social_icon"></i>
+              </a>  
+              <a href="https://www.instagram.com/priyankapolagani/" target="_blank">
+                <i class="fa fa-instagram social_icon"></i>
+              </a>
+            </div>
+          </div>
+        </div><!--//profile-->
+      </div><!--//container-->
+    </section><!--//intro-->
+
+    <!--Projects -->
+    <section id="projects-section">
+      <h2 class="section-heading text-uppercase">Projects</h2>
+      <div class="container">
+        <div class="project-card">
+          <span class="title">Smart Agricultural Robot</span>
+          <br>
+          <a href="Smart_agricultural_robot.pdf" target="_blank">View Project</a>
+          <br>
+          <p class="project_description">
+            A smart agricultural robot designed to help a farmer to maintain and achieve complex tasks that can be automated.
+          </p>
+        </div>
+        <div class="project-card">
+          <span class="title">Density Based Traffic Control System</span>
+          <br>
+          <a href="Density_based_traffic_control_system.pdf" target="_blank">View Project</a>
+          <br>
+          <p class="project_description">
+            A system designed on custom arduino using EAGLE that controls the traffic based on the density using infrared sensors.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--//Projects -->
+
+    <!-- Timeline -->
+    <section id="experience-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Professional Career</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <a href="https://www.deakin.edu.au/" target="_blank">
+                    <img class="rounded-circle-timeline img-fluid" src="Deakin.jpg" alt="">
+                  </a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>November 2021 - Present</h4>
+                    <h5 class="subheading">Master of Information Technology(Professional)</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      <ul class="disc-style">
+                        <li>Place holder for time line details</li>
+                        <li>Place holder for time line details</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <a href="https://www.cognizant.com/in/en" target="_blank">
+                    <img class="rounded-circle-timeline img-fluid" src="cts.png" alt="">
+                  </a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>January - November, 2020</h4>
+                    <h5 class="subheading">Programmer Analyst Trainee</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      <ul class="disc-style">
+                        <li>Inspected material prior to production to ensure authenticity and quality.</li>
+                        <li>Design automated testing scripts with oversight for deployment of tests.</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <a href="http://www.griet.ac.in/" target="_blank">
+                    <img class="rounded-circle-timeline img-fluid" src="griet.png" alt="">
+                  </a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>March 2019</h4>
+                    <h5 class="subheading">Graduated from College</h5>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Bachelor's degree in Electronics and Communications from Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Get in
+                    <br><a href="mailto:priyankapolagani12@gmail.com?Subject=Hello!" target="_top">Contact</a>
+                    <br>with me!
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="comment-section">
+      <div class="container">
+        <h5>Comment Section</h5>
+        <div class="row">
+          <div class="input-field col s12">
+            <input value="" id="name" type="text" class="validate">
+            <label class="name" for="name">Name</label>
+          </div>
+        
+          <div class="input-field col s12">
+            <input value="" id="description" type="text" class="validate">
+            <label class="description" for="description">Description</label>
+          </div>
+        </div>
+      </div>
+      <div class="row center" style="padding-top:50px;">
+        <a onclick="newComment()" href="#!" class="waves-effect waves-light btn-large">Submit</a>
+      </div>
+      <div class="container">
+        <div class="row" id="listComments">
+  
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>&copy; Priyanka</p>
+    </div>
+  </footer>
+  
+  <!-- socket IO Served by the server -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="env.js"></script>
+        
+</body>
+</html>
