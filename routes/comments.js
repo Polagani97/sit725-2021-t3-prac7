@@ -4,6 +4,7 @@ var Controllers = require("../controllers");
 
 
 router.get('/', (req, res) => {
+
     Controllers.CommentsController.getComments(res);
 
     // get comments from database
@@ -12,7 +13,9 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+    
     Controllers.CommentsController.createComment(req.body, res)
+
     /*console.log('New comment posted')
     console.log('body', req.body)
     let comment = req.body;

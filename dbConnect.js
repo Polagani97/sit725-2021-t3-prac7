@@ -1,5 +1,5 @@
-/// DATABASE Connections
-//database connection
+/// DATABASE Connection
+
 const MongoClient = require('mongodb').MongoClient;
 
 const uri = "mongodb+srv://priyanka:Priy%402127@cluster0.2dgu3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";

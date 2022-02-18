@@ -1,4 +1,4 @@
-//var express = require('express')
+
 let express = require("express");
 let app = express();
 
@@ -86,6 +86,7 @@ const getComments=(res)=>{
     })
 }
 
+// call the open connection to establish a db connection
 openConnection()
 
 http.listen(port,()=>{

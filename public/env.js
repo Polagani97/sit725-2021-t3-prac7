@@ -11,6 +11,7 @@ const submitComment=(comment)=>{
     });
 }
 
+// add new comment to the server
 const newComment=()=>{
     let name = $('#name').val()
     let description = $('#description').val()
@@ -21,6 +22,7 @@ const newComment=()=>{
     submitComment(comment)
 }
 
+// get comments from the server
 const requestComments=()=>{
     $.get('/api/comments',(comments)=>{
         if(comments.length>0){
@@ -68,9 +70,6 @@ $(document).ready(function(){
   
     // get data and build the ui component
     listComments(dummyData)
-  
-    //bind the button
-    //$('#testButton').click(testButtonFunction)
   
     requestComments()
 
