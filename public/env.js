@@ -72,6 +72,6 @@ $(document).ready(function(){
     //bind the button
     //$('#testButton').click(testButtonFunction)
   
-    //requestComments()
+    requestComments()
 
   })
